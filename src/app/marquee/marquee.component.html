@@ -1,0 +1,10 @@
+<div class="bg-secondary text-white">
+   <ng-marquee duration="30" id="myMarquee">
+       <span class="bg-danger">
+            UpComming Batches : 
+       </span>
+        <span *ngFor="let batch of batches">
+           <b>{{batch.name}}</b> &nbsp;{{batch.description}}
+        </span>
+  </ng-marquee>
+</div>

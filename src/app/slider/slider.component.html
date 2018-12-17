@@ -1,0 +1,11 @@
+<ngb-carousel *ngIf="images!=null">
+  <div *ngFor="let slider of sliders">
+      <ng-template ngbSlide>
+          <img [src]="slider.path" [alt]="slider.alt">
+          <div class="carousel-caption">
+            <h3>{{slider.title}}</h3>
+            <p>{{slider.subtitle}}</p>
+          </div>
+        </ng-template>
+  </div>
+  </ngb-carousel>
