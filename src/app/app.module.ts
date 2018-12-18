@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { NgMarqueeModule } from 'ng-marquee';
 import { MarqueeComponent } from './marquee/marquee.component';
 import { HomeComponent } from './home/home.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    NgMarqueeModule
+    NgMarqueeModule,
+    AngularFireModule.initializeApp(environment.config),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
