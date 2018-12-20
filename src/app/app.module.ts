@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+import { MaterialModule } from './material.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     NgbModule,
     NgMarqueeModule,
+    BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.config),
+    MaterialModule,
     AngularFireDatabaseModule
   ],
   providers: [],
