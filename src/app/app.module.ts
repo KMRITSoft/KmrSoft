@@ -14,6 +14,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { MaterialModule } from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CopyRightComponent } from './copy-right/copy-right.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MenuComponent,
     HeaderComponent,
     MarqueeComponent,
-    HomeComponent
+    HomeComponent,
+    CopyRightComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
