@@ -1,5 +1,10 @@
 
 <div class="button-row">
+    <button mat-raised-button [matMenuTriggerFor]="home" color="primary" >
+    <a routerLink="/home1">
+      Home
+    </a>
+    </button>
   <button mat-raised-button [matMenuTriggerFor]="animals" color="primary">Animal</button>
   <button mat-flat-button [matMenuTriggerFor]="humans" color="primary">Humans</button>
 </div>
