@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Contact } from '../model/contact';
 import { FooterService } from './footer.service';
 
+declare const google: any;
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -30,6 +32,15 @@ export class FooterComponent implements OnInit {
       let x = data.payload.toJSON();
       this.aboutUs = x.toString();
     })   
+
+ /**   
+    let mapProp = {
+      center: new google.maps.LatLng(51.508742, -0.120850),
+      zoom: 5,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+    let map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+*/
   }
 
 }

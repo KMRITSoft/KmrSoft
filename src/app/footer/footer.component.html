@@ -1,16 +1,21 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <h6>About Us</h6>
         <span>{{ aboutUs }}</span>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <h6>Contact Us</h6>
       <ul>
         <li *ngFor = "let contact of contacts">
           {{contact.value}}
         </li>
       </ul>
+    </div>
+    <div class="col-md-4">
+        <h6>Find Us</h6>
+        <!---<div id="googleMap" style="width:200px;height:200px;"></div>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3910845.672141068!2d78.5270572!3d16.8171647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb922754caef5d%3A0x3a2ef4074a6fc6f6!2sKMR+Software+Services+Pvt+Ltd!5e0!3m2!1sen!2sin!4v1547781503556" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
