@@ -1,23 +1,24 @@
 
-<div class="button-row">
+<!--div class="button-row">
     <button mat-raised-button [matMenuTriggerFor]="home" color="primary" >
     <a routerLink="/home1">
       Home
     </a>
     </button>
-  <button mat-raised-button [matMenuTriggerFor]="animals" color="primary">Animal</button>
-  <button mat-flat-button [matMenuTriggerFor]="humans" color="primary">Humans</button>
+    <button mat-raised-button [matMenuTriggerFor]="services" color="primary">Services</button>
+    <button mat-flat-button [matMenuTriggerFor]="aboutus" color="primary">About Us</button>
+    <button mat-flat-button [matMenuTriggerFor]="sap" color="primary">SAP</button>
 </div>
-
-<mat-menu #humans="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+<mat-menu #services="matMenu">
+  <button mat-menu-item >IT Consulting</button>
+  <button mat-menu-item >IT Development</button>
+  <button mat-menu-item [matMenuTriggerFor]="ittraining">IT Training</button>
 </mat-menu>
-<mat-menu #animals="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-  <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+<mat-menu #sap="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="ittraining">IT Training</button>
+  <button mat-menu-item [matMenuTriggerFor]="ittraining">IT Training</button>
+  <button mat-menu-item [matMenuTriggerFor]="ittraining">IT Training</button>
 </mat-menu>
-
 <mat-menu #vertebrates="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
   <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
@@ -58,3 +59,269 @@
   <button mat-menu-item>Blue Spiny Lizard</button>
   <button mat-menu-item disabled>Velociraptor</button>
 </mat-menu>
+-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Home</a>
+  <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">IT Consulting</a></li>
+            <li><a class="dropdown-item" href="#">IT Development</a></li>
+            <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">
+                      IT Training
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Online Training</a></li>
+                      <li><a class="dropdown-item" href="#">Classroom Training</a></li>
+                      <li><a class="dropdown-item" href="#">Corporate Training</a></li>
+                  </ul>
+            </li>
+          </ul>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">About US</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">
+          SAP
+        </a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Technical</a>
+              <ul class="dropdown-menu">
+                  <li ><a class="dropdown-item" href="#">SAP ABAP</a></li>
+                  <li><a class="dropdown-item" href="#">SAP ABAP ON HANA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP WEBDYNPRO ABAP</a></li>
+                  <li><a class="dropdown-item" href="#">SAP WEBDYNPRO</a></li>
+                  <li><a class="dropdown-item" href="#">SAP WEBDYNPRO JAVA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP ADOBE FORMS</a></li>
+                  <li><a class="dropdown-item" href="#">SAP UI5</a></li>
+                  <li><a class="dropdown-item" href="#">SAP EP</a></li>
+                  <li><a class="dropdown-item" href="#">SAP SECURITIES</a></li>
+                  <li><a class="dropdown-item" href="#">SAP GRC</a></li>
+                  <li><a class="dropdown-item" href="#">SAP BW ON HANA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP BPC</a></li>
+                  <li><a class="dropdown-item" href="#">SAP DMO</a></li>
+                  <li><a class="dropdown-item" href="#">SAP SOLUTIONS MANAGER</a></li>
+                  <li><a class="dropdown-item" href="#">SAP CPM</a></li>
+                  <li><a class="dropdown-item" href="#">SAP ABAP BI</a></li>
+                  <li><a class="dropdown-item" href="#">SAP OO ABAP</a></li>
+                  <li><a class="dropdown-item" href="#">SAP ABAP HR      </a></li>
+                  <li><a class="dropdown-item" href="#">SAP NETEAVER</a></li>
+                  <li><a class="dropdown-item" href="#">SAP WORKFLOW</a></li>
+                  <li><a class="dropdown-item" href="#">SAP FIORI</a></li>
+                  <li><a class="dropdown-item" href="#">SAP XI PI</a></li>
+                  <li><a class="dropdown-item" href="#">SAP BASIS</a></li>
+                  <li><a class="dropdown-item" href="#">SAP SECURITIES WITH GRC</a></li>
+                  <li><a class="dropdown-item" href="#">SAP BW/BI</a></li>
+                  <li><a class="dropdown-item" href="#">SAP BODS</a></li>
+                  <li><a class="dropdown-item" href="#">SAP CRM</a></li>
+                  <li><a class="dropdown-item" href="#">SAP HANA</a></li>
+                  <li><a class="dropdown-item" href="#">SAP WEBDYNPRO JAVA</a></li>
+                  <li><a class="dropdown-item" href="#">S4 HANA</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">
+                    Functional 
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">SAP FICO</a></li>
+                      <li><a class="dropdown-item" href="#">SAP SD</a></li>
+                      <li><a class="dropdown-item" href="#">SAP WM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP HR/HCM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP E-RECRUITMENT</a></li>
+                      <li><a class="dropdown-item" href="#">IS UTILITIES</a></li>
+                      <li><a class="dropdown-item" href="#">SAP CS</a></li>
+                      <li><a class="dropdown-item" href="#">SAP MDM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP SRM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PS</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PLM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP FICA</a></li>
+                      <li><a class="dropdown-item" href="#">SAP IM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP SUCCESS FACTOR</a></li>
+                      <li><a class="dropdown-item" href="#">SAP TRM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP VISTEX</a></li>
+                      <li><a class="dropdown-item" href="#">SAP BI/BO</a></li>
+                      <li><a class="dropdown-item" href="#">SAP QM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP FSCM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP MM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP HR</a></li>
+                      <li><a class="dropdown-item" href="#">SAP ESS & MSS</a></li>
+                      <li><a class="dropdown-item" href="#">IS RETAIL</a></li>
+                      <li><a class="dropdown-item" href="#">IS OIL & GAS</a></li>
+                      <li><a class="dropdown-item" href="#">SAP CRM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP MDG</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PP</a></li>
+                      <li><a class="dropdown-item" href="#">SAP TESTING</a></li>
+                      <li><a class="dropdown-item" href="#">SAP SNC</a></li>
+                      <li><a class="dropdown-item" href="#">SAP GTS</a></li>
+                      <li><a class="dropdown-item" href="#">SAP TM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP IS PHARMA</a></li>
+                      <li><a class="dropdown-item" href="#">SAP TRM</a></li>
+                      <li><a class="dropdown-item" href="#">SAP EHS</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PRODUCT COSTING</a></li>
+                      <li><a class="dropdown-item" href="#">SAP PPM</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">
+                Dimensional Modules
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">SAP APO</a></li>
+                  <li><a class="dropdown-item" href="#">SAP EWM</a></li>
+              </ul>
+        </li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+        New Technologies
+      </a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">
+                  HADOOP
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HADOOP DEV</a></li>
+                  <li><a class="dropdown-item" href="#">HADOOP Administrator</a></li>
+                  <li><a class="dropdown-item" href="#">HADOOP SPARK & SCALA</a></li>
+              </ul>
+        </li>
+        <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+                DEVOPS
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">DEVOPS</a></li>
+                <li><a class="dropdown-item" href="#">DATA SCIENCE</a></li>
+                <li><a class="dropdown-item" href="#">ACTIVE DIRECTORY</a></li>
+            </ul>
+      </li>
+      <li class="dropdown-submenu">
+          <a class="dropdown-item dropdown-toggle" href="#">
+              CLOUD
+          </a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">AWS</a></li>
+              <li><a class="dropdown-item" href="#">SALESFORCE</a></li>
+              <li><a class="dropdown-item" href="#">TIBCO</a></li>
+          </ul>
+    </li>
+    <li class="dropdown-submenu">
+        <a class="dropdown-item dropdown-toggle" href="#">
+            REPORTING
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">TABLEAU</a></li>
+            <li><a class="dropdown-item" href="#">POWERBI</a></li>
+            <li><a class="dropdown-item" href="#">QLIKVIEW</a></li>
+            <li><a class="dropdown-item" href="#">TERADATA</a></li>
+            <li><a class="dropdown-item" href="#">SERVICENOW DEVELOPMENT</a></li>
+            <li><a class="dropdown-item" href="#">SERVICENOW ADMIN</a></li>
+        </ul>
+  </li>
+      </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+             Warehousing
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">MICRO STRATEGY</a></li>
+            <li><a class="dropdown-item" href="#">DATA STAGE</a></li>
+            <li><a class="dropdown-item" href="#">COGNOS</a></li>
+            <li><a class="dropdown-item" href="#">ABINTIO</a></li>
+            <li><a class="dropdown-item" href="#">INFORMATICA</a></li>
+            <li><a class="dropdown-item" href="#">OBIEE</a></li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+             Microsoft
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">MS CRM DYNAMICS</a></li>
+            <li><a class="dropdown-item" href="#">MS CRM AX TECH</a></li>
+            <li><a class="dropdown-item" href="#">MS AX FINANCIAL</a></li>
+            <li><a class="dropdown-item" href="#">MS AX TRADE & LOGISTRICS</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT VB.NET</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT SQL SERVER DBA</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT C#.NET</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT SHAREPOINT</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT ASP.NET</a></li>
+            <li><a class="dropdown-item" href="#">MICROSOFT BI</a></li>
+          </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+            Other Modules
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">
+                      Hot Technologies
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">J2EE ONLINE TRAINING</a></li>
+                      <li><a class="dropdown-item" href="#">J2ME ONLINE TRAINING</a></li>
+                      <li><a class="dropdown-item" href="#">.NET</a></li>
+                      <li><a class="dropdown-item" href="#">ANGULAR</a></li>
+                      <li><a class="dropdown-item" href="#">PHP</a></li>
+                      <li><a class="dropdown-item" href="#">PLSQL</a></li>
+                      <li><a class="dropdown-item" href="#">PYTHON</a></li>
+                      <li><a class="dropdown-item" href="#">LINUX</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">
+                    VIRTUALIZATION
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">VMWARE V HORIZON VIEW</a></li>
+                    <li><a class="dropdown-item" href="#">VMWARE V SHERE ADMIN</a></li>
+                    <li><a class="dropdown-item" href="#">CITRIX ADMIN</a></li>
+                </ul>
+          </li>
+          <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">
+                  MOBILE APPS
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ANDROID APPS</a></li>
+                  <li><a class="dropdown-item" href="#">IPHONE APPS</a></li>
+                  <li><a class="dropdown-item" href="#">MOBILE TESTING</a></li>
+              </ul>
+        </li>
+        <li class="dropdown-submenu">
+            <a class="dropdown-item dropdown-toggle" href="#">
+                TESTING TOOLS
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">MANUAL TESTING</a></li>
+                <li><a class="dropdown-item" href="#">LOAD RUNNER</a></li>
+                <li><a class="dropdown-item" href="#">QC</a></li>
+                <li><a class="dropdown-item" href="#">QTP</a></li>
+                <li><a class="dropdown-item" href="#">QA</a></li>
+            </ul>
+      </li>
+      </ul>
+    </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+          </li>
+    
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact US</a>
+          </li>
+ 
+  </ul>
+</nav>
