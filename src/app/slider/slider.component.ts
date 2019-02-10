@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Slider} from '../model/slider';
+import { SliderService} from './slider.service';
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
@@ -8,8 +9,8 @@ import { Slider} from '../model/slider';
 })
 export class SliderComponent implements OnInit {
   sliders : Slider[];
-  images;
-    constructor(config: NgbCarouselConfig) {
+    constructor(config: NgbCarouselConfig,
+      private _sliderService: SliderService) {
       // customize default values of carousels used by this component tree
       config.interval = 10000;
       config.wrap = false;
@@ -18,16 +19,14 @@ export class SliderComponent implements OnInit {
     }
 
   ngOnInit() {
-    this.sliders = [
-      new Slider("./../assets/images/training1.png","Image Description1","Title1","SubTitle1"),
-      new Slider("./../assets/images/training2.png","Image Description2","Title2","SubTitle2"),
-      new Slider("./../assets/images/training3.png","Image Description3","Title3","SubTitle3"),
-    ];
-    let event = this;
-    this.images=[];
-    this.sliders.forEach(function(slider){
-      event.images.push(slider.path);
+    let s = this._sliderService.getSliders();
+    s.snapshotChanges().subscribe(data => { // Using snapshotChanges() method to retrieve list of data along with metadata($key)
+      this.sliders = [];
+      data.forEach(item => {
+        let a = item.payload.toJSON(); 
+        a['$key'] = item.key;
+        this.sliders.push(a as Slider);
+      });
     });
   }
-
 }

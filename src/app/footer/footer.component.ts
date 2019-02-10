@@ -23,7 +23,6 @@ export class FooterComponent implements OnInit {
       data.forEach(item => {
         let a = item.payload.toJSON(); 
         a['$key'] = item.key;
-        console.log(a);
         this.contacts.push(a as Contact);
       });
   });
