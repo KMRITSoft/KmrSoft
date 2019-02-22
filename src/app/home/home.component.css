@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 767px){
+body {
+    font-size: 13px;
+    line-height: 23px;
+}
+}
+
+ul{
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+li:before {
+    content: "\f005";
+    margin:0 1em 0 0;
+    width:16px;
+    height:16px;
+    color:#0085c3;
+  }
+
+.l-title{
+    text-align: center; 
+    font-size: 35px;
+    color: #72706f; 
+    font-family: merienda; 
+    font-weight: 400; 
+    font-style: normal;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+}
+
+.l-title-1{
+    color: #808080;
+}
+
+.l-title-2{
+    color: #0085c3;
+}
+
+.l-content{
+    font-family: "Open Sans" sans-serif;
+    text-align:center;
+    line-height:34px;
+    color:#666666;
+    font-size:14px;
+    font-weight:400;
+    
+}
+
+.section-row{
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.service-cols{
+    display: table;
+}
+
+.service-cols>div:first-child{
+    margin-left:0;
+}
+
+.service-cols>div{
+    margin-left:4%;
+}
+
+@media (max-width: 768px){
+.service-cols > div {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+}
+}
+
+.service-container{
+    width: 30.6666%;
+    float: left;
+}
+
+.service-border-green{
+    background-color: #81d742 !important;
+}
+
+.service-border-purple{
+    background-color: #8224e3 !important;
+}
+
+.service-border-orange{
+    background-color: #dd9933 !important;
+}
+
+.service{
+    border:1px solid #f4f4f4;
+    padding:20px;
+    text-align:center;
+    -webkit-border-radius: 60px;
+    background-color: #ffffff;
+}
+
+.service-image{
+    margin:0 auto 10px auto;
+    padding:5px;
+    width:90px;
+    height:90px;
+    display:inline-block;
+    float:none;
+}
+
+.service-title{
+    clear:both;
+    color: #0085c3;
+    font-family: merienda;
+    font-size:22px;
+    font-weight:inherit;
+}
+
+.service-brief{
+    text-align:justify;
+    line-height:30px;
+    font-family:sans-serif;
+}
+
+.service-read-more{
+    width:50%;
+    float:none;
+    display:block;
+    background: linear-gradient(to bottom,#50b7e4 0,#3098c4 100%);
+    background-color: #3ea6d2;
+    border: 1px solid #1481b0;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px auto;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.quick-enq{
+    text-align: center;
+    background: #0085c3;
+    color: #fff;
+    padding: 3px 0px 3px 0px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    font-size: 23px;
+    letter-spacing: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
