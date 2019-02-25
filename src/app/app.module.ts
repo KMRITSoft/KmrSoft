@@ -17,6 +17,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CopyRightComponent } from './copy-right/copy-right.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { EnquiryComponent } from './enquiry/enquiry.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     CopyRightComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    EnquiryComponent
   ],
   imports: [
     BrowserModule,
